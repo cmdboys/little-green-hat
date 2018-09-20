@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/cmdboys/little-green-hat/issues"
   },
-  "homepage": "https://github.com/cmdboys/little-green-hat#readme"
+  "homepage": "https://github.com/cmdboys/little-green-hat#readme",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "string-random": "^0.1.0"
+  }
 }
