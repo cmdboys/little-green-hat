@@ -1,6 +1,7 @@
 const Writer = require('./lib/writer')
 const schedule = require('node-schedule');
 const write = new Writer()
+const Config = require('./config')
 
 let timeGroup = {
   few: '30 1 1 * * *', // 每天的凌晨1点1分30秒触发 == 1次
@@ -26,10 +27,10 @@ async function index() {
 
 
 function run(){
-  schedule.scheduleJob('30 * * * * *', function(){
+  schedule.scheduleJob(timeGroup[Config.mode], function(){
     index()
   });
 }
 
 
-index()
+run()

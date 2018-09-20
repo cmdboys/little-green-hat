@@ -1,3 +1,3 @@
 module.exports = {
-  mode: 'few', // few | more
+  mode: 'more', // few | more
 }
