@@ -12,9 +12,9 @@
     <td>上次更新时间</td>
   </tr>  
   <tr>
-    <td>$WORKS{2}</td>
+    <td>$WORKS{3}</td>
     <td>$DAYS{1}</td>
-    <td>$NOW{2018-09-20 17:33:32}</td>
+    <td>$NOW{2018-09-20 17:37:30}</td>
   </tr> 
 </table>  
 
