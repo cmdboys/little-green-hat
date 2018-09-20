@@ -33,7 +33,7 @@
 
 ### pm2
 更改 `/pm2.json` 的`cwd`路径
-```json
+```js
 {
   "apps": [{
     "name": "little-green-hat",
