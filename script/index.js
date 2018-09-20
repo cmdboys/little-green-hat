@@ -9,6 +9,9 @@ module.exports = {
     },
     push(){
       return `git push origin`
+    },
+    pull(){
+      return `git pull origin`
     }
   }
 
