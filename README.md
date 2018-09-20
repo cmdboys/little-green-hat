@@ -1,5 +1,5 @@
 # little-green-hat
-小绿帽，每天定时向你的github提交代码，让你每天都被绿。
+如果你有一台闲置的云主机或者vps，小绿帽可以帮助你每天定时向你的github提交代码，让你每天都被绿。
 
 ## status
 
@@ -16,4 +16,55 @@
   </tr> 
 </table>  
 
+
+## install
+
+* fork本项目
+* `git clone [fork后的路径]`
+* `cd little-green-hat`
+* `npm i`
+
+## 运行前配置
+
+### git免密登陆
+由于本程序需要使用到git，fork之后你要对本项目走一遍免密pull or push
+* 在命令行输入命令: `git config --global credential.helper store`
+* 随便更改下文件进行一次commit&push，git就会记住你的账号密码
+
+### pm2
+更改 `/pm2.json` 的`cwd`路径
+```json
+{
+  "apps": [{
+    "name": "little-green-hat",
+    "script": "index.js",
+    "cwd": "D:\workspace2\little-green-hat", // 改成你本地的路径
+    "exec_mode": "fork",
+    "max_memory_restart": "1G",
+    "autorestart": true,
+    "node_args": [],
+    "args": [],
+    "env": {
+
+    }
+  }]
+}
+```
+
+### 运行
+* `pm2`是一个守护你的nodejs程序让你的程序在后台运行的好工具，确保你已经安装了`pm2` `npm i -g pm2`
+* `pm2 start pm2.json`
+
+## config
+
+`/config/index.js`
+```js
+  module.exports = {
+    mode: 'more', // few | more  //每天运行的频率，高或者低
+    rule: {
+      few: '30 1 1 * * *', // 每天的凌晨1点1分30秒触发 == 1次
+      more: '30 1 * * * *' // 每小时的1分30秒触发 == 24 次
+    }
+  }
+```
 
