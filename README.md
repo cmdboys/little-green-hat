@@ -6,7 +6,7 @@
 <table>
   <tr>
     <td>执行次数</td>
-    <td工作天数</td>
+    <td>工作天数</td>
     <td>上次更新时间</td>
   </tr>  
   <tr>
