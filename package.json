@@ -1,0 +1,19 @@
+{
+  "name": "little-green-hat",
+  "version": "1.0.0",
+  "description": "小绿帽，每天定时向你的github提交代码，让你每天都被绿一下。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmdboys/little-green-hat.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmdboys/little-green-hat/issues"
+  },
+  "homepage": "https://github.com/cmdboys/little-green-hat#readme"
+}
