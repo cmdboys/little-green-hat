@@ -2,20 +2,23 @@ const Writer = require('./lib/writer')
 const schedule = require('node-schedule');
 const write = new Writer()
 const Config = require('./config')
+const moment = require('moment')
 
 let timeGroup = Config.rule
 
 async function index() {
   
+  let now = moment().format('YYYY-MM-DD HH:mm:ss')
+  
   let res = await write.run()
   
   if(res.error.length === 0) {
-    console.log('任务执行成功')
+    console.log(now+'任务执行成功')
   }else{
-    console.log('任务执行失败：')
+    console.log(now+'任务执行失败：')
     console.log(res.error)
   
-    console.log('尝试再次执行')
+    console.log(now+'尝试再次执行')
     await index()
   }
   
