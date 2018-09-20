@@ -3,11 +3,7 @@ const schedule = require('node-schedule');
 const write = new Writer()
 const Config = require('./config')
 
-let timeGroup = {
-  few: '30 1 1 * * *', // 每天的凌晨1点1分30秒触发 == 1次
-  middle: '', // 取消 middle
-  more: '30 1 * * * *' // 每小时的1分30秒触发 == 24 次
-}
+let timeGroup = Config.rule
 
 async function index() {
   
