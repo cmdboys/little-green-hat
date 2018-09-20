@@ -28,12 +28,12 @@
 
 ## 运行前配置
 
-### git免密登陆
+### 1.git免密登陆
 由于本程序需要使用到git，fork之后你要对本项目走一遍免密pull or push
 * 在命令行输入命令: `git config --global credential.helper store`
 * 随便更改下文件进行一次commit&push，git就会记住你的账号密码
 
-### pm2
+### 2.pm2
 更改 `/pm2.json` 的`cwd`路径
 ```js
 {
@@ -52,6 +52,9 @@
   }]
 }
 ```
+### 3.重置配置
+由于本地的运行历史是由程序动态更新的，请重置你的历史。
+拷贝 `cat.default.json` 覆盖 `cat.json`
 
 ### 运行
 * `pm2`是一个守护你的nodejs程序让你的程序在后台运行的好工具，确保你已经安装了`pm2` `npm i -g pm2`
@@ -69,4 +72,4 @@
     }
   }
 ```
-
+* 如果需要更多自定义时间规则见 https://github.com/node-schedule/node-schedule
