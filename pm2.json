@@ -2,7 +2,7 @@
   "apps": [{
     "name": "little-green-hat",
     "script": "index.js",
-    "cwd": "D:\workspace2\little-green-hat",
+    "cwd": "/millent/nodejs/little-green-hat",
     "exec_mode": "fork",
     "max_memory_restart": "1G",
     "autorestart": true,
