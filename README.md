@@ -2,9 +2,6 @@
 如果你有一台闲置的云主机或者vps或者你的电脑永远都不关机(滑稽)，小绿帽可以帮助你每天定时向你的github提交代码，让你每天都被绿。  
 
 ![4d112dbd](https://user-images.githubusercontent.com/17584565/45829286-2f53d000-bd2d-11e8-8de9-0f605723662e.gif)
-![4d112dbd](https://user-images.githubusercontent.com/17584565/45829286-2f53d000-bd2d-11e8-8de9-0f605723662e.gif)
-![4d112dbd](https://user-images.githubusercontent.com/17584565/45829286-2f53d000-bd2d-11e8-8de9-0f605723662e.gif)
-![4d112dbd](https://user-images.githubusercontent.com/17584565/45829286-2f53d000-bd2d-11e8-8de9-0f605723662e.gif)
 
 ## status
 
