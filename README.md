@@ -14,9 +14,9 @@
     <td>上次更新时间</td>
   </tr>  
   <tr>
-    <td>$WORKS{84}</td>
-    <td>$DAYS{70}</td>
-    <td>$NOW{2018-12-01 01:01:30}</td>
+    <td>$WORKS{85}</td>
+    <td>$DAYS{71}</td>
+    <td>$NOW{2018-12-02 01:01:30}</td>
   </tr> 
 </table>  
 
