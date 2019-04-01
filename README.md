@@ -23,8 +23,8 @@
 
 ## install
 
-* fork本项目
-* `git clone [fork后的路径]`
+* clone 本项目然后新建提交到你的仓库，不要`fork`
+* `git clone [新建后的路径]`
 * `cd little-green-hat`
 * `npm i`
 
